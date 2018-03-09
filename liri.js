@@ -62,7 +62,7 @@ function mainMenu() {
 function tweetIt() {
   let tweetParam = {
     user_id: "jewis168",
-    count: 2
+    count: 20
   };
   client.get("statuses/user_timeline", tweetParam, tweetFollowUp);
   function tweetFollowUp(err, output, response) {
